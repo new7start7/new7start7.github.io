@@ -1,59 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek | Developer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar | Developer Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary: #026e00; /* Node.js green */
+      --dark: #1a1a1a;
+      --light: #f9f9f9;
+      --gray: #555;
+      --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--light);
+      color: var(--dark);
       line-height: 1.6;
     }
+
     header {
-      background: #24292e;
-      color: #fff;
-      padding: 1rem 2rem;
+      background: var(--dark);
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
-      color: #fff;
-      margin: 0 10px;
+      margin: 0 1rem;
+      color: white;
       text-decoration: none;
+      font-weight: 500;
     }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #026e00, #04a12b);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
+
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--primary);
+      padding-left: 0.5rem;
+      font-size: 1.8rem;
     }
+
+    .projects ul {
+      list-style: none;
+    }
+
+    .projects li {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .projects li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #24292e;
-      color: #fff;
+      background: var(--dark);
+      color: #ccc;
+      padding: 1.5rem;
+      font-size: 0.9rem;
     }
-    a {
-      color: #0366d6;
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Abhishek Kumar</h1>
-    <p>Software Development Enthusiast | Open Source Learner</p>
+    <p>Software Developer • Open Source Enthusiast</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -61,36 +150,59 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <h2>Building software, exploring ideas, and sharing code 🚀</h2>
+    <p>
+      Passionate about software development, web technologies, and creating
+      tools that make life easier. Always learning, always experimenting.
+    </p>
+  </section>
+
   <main>
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hi! I’m Abhishek, a developer passionate about software development, open-source, and learning new technologies.
-        This site is my little corner on the web to share my projects and experiments.
+        Hi, I’m Abhishek — a developer from India interested in building web
+        applications, experimenting with open source, and exploring how software
+        can solve real-world problems.  
       </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Project 1:</strong> Personal Portfolio Website</li>
-        <li><strong>Project 2:</strong> GitHub API Experiments</li>
-        <li><strong>Project 3:</strong> Small Dev Tools & Scripts</li>
+        <li>
+          <strong>📂 Portfolio Website:</strong> This very site — hosted on
+          GitHub Pages and built from scratch.
+        </li>
+        <li>
+          <strong>⚙️ Dev Tools:</strong> Small JavaScript & Python utilities for
+          developers.
+        </li>
+        <li>
+          <strong>🌐 API Experiments:</strong> Working with GitHub and third-party APIs.
+        </li>
       </ul>
-      <p>Check out more on my <a href="https://github.com/new7start7" target="_blank">GitHub profile</a>.</p>
+      <p>
+        More on my <a href="https://github.com/new7start7" target="_blank">GitHub profile</a>.
+      </p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-        🐙 GitHub: <a href="https://github.com/new7start7" target="_blank">github.com/new7start7</a>
+        📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+        🐙 GitHub:
+        <a href="https://github.com/new7start7" target="_blank">github.com/new7start7</a>
       </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Abhishek Kumar | Hosted on GitHub Pages</p>
+    <p>
+      &copy; 2025 Abhishek Kumar • Built with ❤️ • Hosted on
+      <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+    </p>
   </footer>
 </body>
 </html>
