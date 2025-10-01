@@ -1,208 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhishek Kumar | Developer Portfolio</title>
-  <style>
-    :root {
-      --primary: #026e00; /* Node.js green */
-      --dark: #1a1a1a;
-      --light: #f9f9f9;
-      --gray: #555;
-      --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: var(--font-main);
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--dark);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(135deg, #026e00, #04a12b);
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      border-left: 5px solid var(--primary);
-      padding-left: 0.5rem;
-      font-size: 1.8rem;
-    }
-
-    .projects ul {
-      list-style: none;
-    }
-
-    .projects li {
-      background: white;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .projects li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      text-align: center;
-      background: var(--dark);
-      color: #ccc;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .hero h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek | Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Abhishek Kumar</h1>
-    <p>Software Developer • Open Source Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-green-400">Abhishek.is-a.dev</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-green-400">About</a></li>
+          <li><a href="#projects" class="hover:text-green-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Building software, exploring ideas, and sharing code 🚀</h2>
-    <p>
-      Passionate about software development, web technologies, and creating
-      tools that make life easier. Always learning, always experimenting.
+  <!-- Hero Section -->
+  <section class="container mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">👋 Hi, I'm Abhishek</h2>
+    <p class="text-lg md:text-xl text-gray-400 mb-6">
+      A passionate <span class="text-green-400">Software Developer</span> who loves building tools, apps, and experiences on the web.
     </p>
+    <a href="https://github.com/new7start7" target="_blank"
+       class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md">
+      Visit My GitHub
+    </a>
   </section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi, I’m Abhishek — a developer from India interested in building web
-        applications, experimenting with open source, and exploring how software
-        can solve real-world problems.  
+  <!-- About Section -->
+  <section id="about" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Me</h3>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        I'm Abhishek, an aspiring developer learning full-stack development.
+        I enjoy working with JavaScript, Node.js, and modern web technologies.
+        My goal is to build software that helps people and solves real-world problems.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>📂 Portfolio Website:</strong> This very site — hosted on
-          GitHub Pages and built from scratch.
-        </li>
-        <li>
-          <strong>⚙️ Dev Tools:</strong> Small JavaScript & Python utilities for
-          developers.
-        </li>
-        <li>
-          <strong>🌐 API Experiments:</strong> Working with GitHub and third-party APIs.
-        </li>
-      </ul>
-      <p>
-        More on my <a href="https://github.com/new7start7" target="_blank">GitHub profile</a>.
-      </p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-10">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-green-400">Project 1</h4>
+          <p class="text-gray-400">A cool web app showcasing my ability to build functional and stylish frontends.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-green-400">Project 2</h4>
+          <p class="text-gray-400">Experimenting with APIs and backend services using Node.js and Express.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-green-400">Project 3</h4>
+          <p class="text-gray-400">A personal tool or script that makes development faster and easier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br />
-        🐙 GitHub:
-        <a href="https://github.com/new7start7" target="_blank">github.com/new7start7</a>
-      </p>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact</h3>
+      <p class="text-gray-400 mb-4">Let's connect! You can reach me at:</p>
+      <p class="text-green-400 font-semibold">new7start7@gmail.com</p>
+      <div class="mt-6">
+        <a href="https://github.com/new7start7" target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>
-      &copy; 2025 Abhishek Kumar • Built with ❤️ • Hosted on
-      <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-    </p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    © 2025 Abhishek | Hosted on <a href="https://pages.github.com/" target="_blank" class="text-green-400">GitHub Pages</a>
   </footer>
 </body>
 </html>
